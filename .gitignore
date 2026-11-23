@@ -7,4 +7,9 @@ coverage/
 .env*
 !.env.example
 data/
-
+.vercel/
+.antigravity/
+.aistudio/
+.agents/
+.vscode/
+.playwright-cli/
