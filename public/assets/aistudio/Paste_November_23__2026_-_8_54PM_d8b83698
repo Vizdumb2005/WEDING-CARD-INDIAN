@@ -1,0 +1,232 @@
+You are a $10,000 bespoke luxury wedding stationery creative director, master motion choreographer, and senior creative frontend engineer (Awwwards Site of the Day caliber).
+
+I have attached a **reference wedding invitation PDF**. Study every page, ritual, shloka, lineage line, address, contact number, verse, and traditional visual motif in the PDF. Your mission is to engineer an **awe-striking, single-file 3D interactive Indian wedding invitation (`index.html`)** with all HTML, CSS, JavaScript, procedural Web Audio synthesis, Canvas physics, free WhatsApp RSVP automation, and handcrafted inline SVG artwork self-contained inside one production-ready file.
+
+Do NOT summarize, truncate, skip sections, or output `// TODO` stubs. Deliver the complete, immediately runnable `index.html`.
+
+---
+
+### 1. STUDIO ART DIRECTION: TACTILE PAPERCRAFT × AUTHENTIC MADHUBANI × ZERO AI SLOP
+
+Treat this as a physical, museum-grade **350gsm handmade cotton-rag letterpress & laser-cut paper suite** accented with authentic **Mithila (Madhubani) art**, brought to life in 3D on a mobile screen.
+
+#### Strict Anti-AI-Slop Ban List (Zero Tolerance)
+- **NO** generic SaaS/startup aesthetics, neon gradients, cyan/violet glows, or heavy blurred plastic glassmorphism slabs.
+- **NO** Unicode emojis (`💍`, `📍`, `🎉`, `🎵`, `📞`, `❤️`, `✅`) anywhere in the rendered UI—every icon must be bespoke, crisp inline SVG linework. *(Note: Clean celebratory characters are permitted strictly inside the outgoing plain-text WhatsApp message string only.)*
+- **NO** flat `#FFFFFF` digital boxes, boxy Bootstrap borders, unstyled browser `<input>`/`<button>` controls, or cartoonish AI clip-art faces.
+- **NO** bouncy/rubbery toy easing—use weighted, physical luxury curves (`cubic-bezier(0.22, 1, 0.36, 1)` for reveals, `cubic-bezier(0.65, 0, 0.35, 1)` for 3D page turns).
+- **NO** clipped Devanagari matras—enforce generous `line-height: 1.5–1.75` and optical vertical padding on all Hindi/Sanskrit typography.
+
+#### Physical Papercraft Materiality System
+1. **Handmade Cotton-Rag Paper Grain:** Apply a subtle procedural inline SVG `<feTurbulence type="fractalNoise">` grain overlay (`opacity: 0.045`, `mix-blend-mode: multiply`, `pointer-events: none`) across paper surfaces so every card feels fibrous, tactile, and warm—never sterile digital white.
+2. **Multi-Plane Die-Cut Paper Elevation:** Construct arches, borders, and cards like physically stacked, laser-cut paper layers using realistic warm sepia/umber layered shadows (`0 1px 1px rgba(54,24,30,0.08), 0 8px 20px -4px rgba(68,10,24,0.12), 0 24px 48px -12px rgba(68,10,24,0.16)`), crisp `1px` bright top paper-edge catchlights (`inset 0 1px 0 rgba(255,252,247,0.88)`), and soft directional `drop-shadow` filters on die-cut scalloped SVG arches.
+3. **Hot-Stamped Antique Gold Foil:** Use realistic multi-stop metallic gold gradients (`#A87D2F → #EED492 → #C69A45 → #F9E6B3 → #966B22`) with subtle slow diagonal specular light sweeps on embossed frames, scroll rod finials, and sacred medallions.
+4. **Letterpress Deboss:** Apply whisper-subtle light/dark micro text-shadows on key engraved headers and paper-stamped borders so text feels pressed into cotton paper.
+
+#### Authentic Madhubani (Mithila) Art Craftsmanship
+Integrate genuine Mithila folk-art structure cleanly via fine inline SVG paths—never messy or overcrowded:
+- **Kachni (Fine Linework & Hatching):** Hand-inked double-line outlines (`stroke-width: 0.9–1.2`, `stroke-linecap: round`) filled with delicate parallel pen-hatching inside lotus petals, border bands, and medallions.
+- **Bharni (Mineral Pigment Accents):** Restrained touches of traditional natural pigments harmonized with the bridal palette: Sindoor Vermilion (`#8C162E`), Haldi Turmeric Ochre (`#D4962A`), Lotus Blush (`#D98A99`), Peacock Indigo (`#1F3A52`), and Leaf Sage (`#5E7A5D`).
+- **Auspicious Mithila Motifs (Used with Editorial Restraint):**
+  - Geometric double-line **Aripan** border bands framing paper edges and section dividers.
+  - Stylized **Kohbar Lotus & Twin Matsya (Fish)** filigree corners symbolizing auspicious marital union.
+  - Delicate **Surya (Sun) & Peacock Feather** micro-medallions on ceremony badges.
+
+#### SACRED RULE — Untampered Preservation of Original Art & Heritage Text
+- **Zero Tampering with Original Artwork:** Wherever original illustrations from the attached PDF (watercolor couple portrait, ivory floral mandap, baraat courtyard procession, and lotus Ganesha wreath) are mounted via `MEDIA_ASSETS`, render them **100% original and untampered**:
+  - **NEVER** apply CSS color filters (`sepia`, `saturate`, `hue-rotate`, `contrast`, `invert`), heavy dark overlays, or Madhubani strokes *on top of* the artwork.
+  - Mount each original painting cleanly inside a recessed **die-cut cotton-paper museum mat window** so the Madhubani linework lives *strictly in the surrounding paper frame, borders, and dividers*—elevating the original art without ever altering or competing with it.
+- **Verbatim Sacred Text Dignity:** Preserve every Sanskrit/Hindi shloka, deity invocation (`श्री गणेशाय नमः`, `वक्रतुण्ड महाकाय...`, `माँ विन्ध्यवासिनी`), honorific (`चि.`, `आयु०`, `स्व.`, `श्री`, `श्रीमती`), epithet, and family name verbatim from the PDF.
+
+---
+
+### 2. DATA ARCHITECTURE, MAPS, WHATSAPP AUTOMATION & SMART PLACEHOLDERS
+
+At the very top of `<script>`, define two clean, thoroughly documented configuration objects: `WEDDING_DATA` and `MEDIA_ASSETS`.
+
+#### A. Strict PDF Extraction + Smart Placeholders
+1. Extract **all** real data verbatim from the attached PDF into `WEDDING_DATA` (couple names, multi-generational lineage for both *वर पक्ष* and *वधू पक्ष*, sacred verses, exact ceremonies & dates, Baraat timing, Departure & Destination addresses, all host tiers—*दर्शनाभिलाषी*, *स्वागताकांक्षी*, *विनीत*, *प्रेषक*—all family phone numbers, and *बाल मनुहार*).
+2. **Smart Placeholder Protocol (For Video Features Missing in the PDF):**
+   Whenever a feature from the interactive experience is not explicitly specified in the attached PDF (such as **per-ceremony dress codes + color swatches**, **pre-wedding "Our Story" photo slides**, **optional Reception card details**, or **custom MP3 music URL**), DO NOT omit the feature and DO NOT show ugly `[TBD]` or `Lorem Ipsum` text on screen. Populate every missing field with a **tasteful, culturally accurate default value** clearly annotated in code with `/* [PLACEHOLDER — REPLACE WITH ACTUAL DATA] */` and `isPlaceholder: true` so the invitation looks 100% finished immediately while remaining trivially editable in one place.
+
+#### B. Mandatory Google Maps Integration (Pre-Wired)
+Integrate this exact Google Maps link directly into `WEDDING_DATA.locations`:
+- **Primary Venue / Departure Location (`वर निवास` / Baraat Prastahan):**
+  - Display Title & Address: From PDF (`वर निवास — दूधनाथ पाण्डेय`, `ग्राम-अवधानपुर, पो०-भोजेमऊ, जनपद-प्रतापगढ़ (उ०प्र०)`)
+  - Resolved Landmark & PIN: `Near Shiv Mandir, Audhanpur (Avadhanpur), Post Bhojemau, Pratapgarh, Uttar Pradesh 230301 (Q4RP+85C)`
+  - **Exact Maps URL (MUST be wired to the map card tap & `GET DIRECTIONS` button):** `https://maps.app.goo.gl/VgCL69bbck5FAVY78?g_st=aw`
+- **Secondary Destination Location (`वधू निवास` / Wedding Venue):**
+  - Display Title & Address: Exact Bride's Residence from PDF (`श्री कृष्णकान्त दुबे "जमीदार दुबे", ग्राम-चाँदपुर, पो०-हरिहरगंज, प्रतापगढ़ (उ०प्र०)`)
+  - Maps URL: Smart Google Maps query link for Chandpur, Hariharganj, Pratapgarh with inline comment `/* [PLACEHOLDER — REPLACE WITH EXACT BRIDE VENUE MAPS LINK IF AVAILABLE] */`.
+
+#### C. Mandatory Free WhatsApp RSVP Automation Config (`WEDDING_DATA.rsvpAutomation`)
+Pre-wire Saurabh Pandey's mobile number directly into a dedicated `rsvpAutomation` config block:
+- `recipientName`: `"Saurabh Pandey (सौरभ पाण्डेय)"`
+- `whatsappNumber`: `"919415563327"` *(Formatted E.164 without `+` for `wa.me` deep links; display as `+91 94155 63327`)*
+- `autoReplyTriggerTag`: `"#SaurabhRanjuVivah"` *(Clean footer tag appended to outgoing WhatsApp RSVPs so Saurabh can configure a 100% free automatic reply rule via WhatsApp Business or a free Android auto-responder)*
+- `freeWebhookUrl`: `""` `/* [OPTIONAL 100% FREE SILENT AUTOMATION: Paste a Google Apps Script Web App URL (logs RSVPs to Google Sheets) OR a CallMeBot WhatsApp API URL here for silent background notifications] */`
+- `callMeBotApiKey`: `""` `/* [OPTIONAL: If using free CallMeBot WhatsApp bot on 919415563327, paste your free API key here to auto-ping WhatsApp silently on every submission] */`
+- Also include Saurabh Pandey (`+91 94155 63327`) cleanly alongside the PDF's family contact numbers as a direct WhatsApp & Call chip.
+
+#### D. `MEDIA_ASSETS` Object (Original Untampered Art + Fallbacks)
+Include clearly labeled slots:
+- `heroCoupleImage`: `""` `/* [REPLACE: Export Couple Watercolor from PDF Page 3 or real portrait] */`
+- `ceremonyMandapImage`: `""` `/* [REPLACE: Export Mandap Watercolor from PDF Page 5] */`
+- `baraatProcessionImage`: `""` `/* [REPLACE: Export Baraat Watercolor from PDF Page 6] */`
+- `floralWreathImage`: `""` `/* [REPLACE: Export Floral Ganesha Wreath from PDF Page 8] */`
+- `storyPhotos`: Array of 6 objects `{ url: "", caption: "...", isPlaceholder: true }` `/* [REPLACE: Add 6 pre-wedding couple photos & captions] */`
+- `backgroundMusicUrl`: `""` `/* [PLACEHOLDER: Add custom Shehnai/instrumental .mp3 URL, or leave blank for built-in Classical Web Audio Engine] */`
+- **Zero-Broken-Art Fallback:** Whenever any image URL is `""`, automatically render a museum-grade, hand-crafted layered inline SVG + watercolor-wash illustration matching the PDF's pastel Mughal-arch & Madhubani palette so the entire invitation looks extraordinary immediately upon opening.
+
+---
+
+### 3. COLOR PALETTE & BILINGUAL EDITORIAL TYPOGRAPHY
+
+#### Thought-Out Heritage Palette (CSS Custom Properties)
+- `--paper-ivory`: `#FBF6EE` (warm unbleached handmade cotton paper)
+- `--paper-blush`: `#F5E7E4` (soft lotus-tinted paper mat)
+- `--paper-rose-mist`: `#EDD4D7` (watercolor ambient wash)
+- `--crimson-royal`: `#7A1026` (velvet book cover, ceremonial display ink)
+- `--wine-deep`: `#420714` (shadow depth, dark royal spotlight card)
+- `--gold-foil`: `#C69B46` (hot-stamped metallic gold)
+- `--gold-highlight`: `#F0D693` (specular foil sheen)
+- `--madhubani-ochre`: `#D4962A` (haldi/marigold mineral pigment)
+- `--madhubani-sage`: `#5D7A5B` (botanical leaf & henna pigment)
+- `--madhubani-indigo`: `#213B54` (sparingly for traditional Madhubani contrast)
+- `--ink-primary`: `#33181E` (warm archival sepia-burgundy ink, WCAG AA+)
+- `--ink-muted`: `#7A5960` (tracked micro-labels)
+
+#### Bilingual Typography System (Google Fonts)
+Load and pair deliberately so Devanagari and English look like a single bespoke press run:
+- **Devanagari Ceremonial Display:** `'Rozha One'` & `'Yatra One'` (couple names, major Hindi titles)
+- **Devanagari Literary Serif:** `'Noto Serif Devanagari'` (400, 500, 600, 700) & `'Tiro Devanagari Hindi'` (shlokas, lineage, ritual descriptions, verses)
+- **English Royal Serif:** `'Cormorant Garamond'` (400, 500, 600, 700 + italic) & `'Cinzel'` (engraved small-caps headers)
+- **Editorial UI Micro-Labels:** `'Montserrat'` (400, 500, 600 — uppercase `10px–11px`, `letter-spacing: 0.24em`)
+
+---
+
+### 4. COMPLETE 3D INTERACTIVE ARCHITECTURE & MOTION CHOREOGRAPHY
+
+Mobile-first (`360px–430px` edge-to-edge). On desktop viewports (`> 480px`), present the invitation centered in a refined `max-width: 430px` elevated folio column resting on a deep textured burgundy-taupe studio desk backdrop with soft ambient vignette.
+
+#### Global Ambient Layers (`pointer-events: none`)
+1. **60fps `<canvas>` Atmospheric Particle Engine:** Soft translucent blush rose petals drifting with 3D sinusoidal flutter + sparse, delicate rising gold-leaf dust motes. Scales to `devicePixelRatio` and respects `prefers-reduced-motion`.
+2. **Top Reading Progress Hairline:** `2px` antique gold shimmer line pinned at the top edge tracking scroll progress.
+3. **Floating Audio Equalizer Pill (Fixed bottom-right, `z-index: 95`):** `46px × 46px` layered ivory-paper & gold-rimmed circular button with 3 animated crimson vertical equalizer bars (animating smoothly when playing, resting cleanly when muted).
+
+#### STAGE 0: Cinematic 3D Papercraft & Madhubani Book Cover (Full-Screen Intro)
+- Locks scroll until opened.
+- Centered 3D rigid-board folio (`width: min(78vw, 315px)`, `aspect-ratio: 3 / 4.15`, `perspective: 1600px`, `transform-style: preserve-3d`):
+  - **Front Cover:** Deep royal crimson velvet-textured cotton board (`#84122B → #4A0716`), physical vertical left book-spine crease, visible multi-layered cream & gilded gold page edges peeking on the right side, and a periodic diagonal hot-foil light sweep.
+  - **Embossed Front Frame:** Double-line notched antique gold border inlaid with fine Madhubani *Kachni* corner motifs, centered circular gold medallion holding a minimalist single-line **Lord Ganesha SVG emblem**, top invocation from PDF (`श्री गणेशाय नमः`), bilingual couple title, and primary wedding date.
+  - **Tactile Hand-Tilt Depth:** Subtle pointer/touch parallax tilt (`rotateX/rotateY ±5deg`) before opening.
+  - **Tap Prompt Below Cover:** Concentric pulsing gold-and-crimson ripple ring + `TAP THE BOOK TO OPEN` / `निमंत्रण खोलने के लिए स्पर्श करें`.
+- **Opening Transition (Triggered on tap):**
+  1. Unlocks browser audio, plays a gentle auspicious temple bell chime, and fades in the classical background ambience.
+  2. Swings front cover smoothly open along the left hinge (`transform-origin: left center; rotateY(-168deg); 1.25s cubic-bezier(0.65, 0, 0.35, 1)`), exposing the patterned inner front cover and a lush cotton-paper welcome page displaying the PDF's sacred Ganesh Vandana shloka.
+  3. Smoothly zooms and dissolves (`scale(1.12)`, `opacity: 0`) into Section 1, unlocking vertical scroll.
+
+#### SECTION 1: Die-Cut Mughal Arch Hero & Choreographed Reveal (`min-height: 100svh`)
+- Framed at the top corners by gently swaying layered papercraft floral *toran* strings with subtle Madhubani lotus buds.
+- Centered tall **Multi-Layer Die-Cut Scalloped Arch Window** (outer cotton-paper mat with fine Madhubani *Aripan* hairline framing an inner recessed shadow window):
+  - Displays `heroCoupleImage` (100% untampered inside its watercolor mat frame, with gentle slow Ken Burns zoom `scale(1) → scale(1.06)` over `20s`, keeping faces completely clear and unobstructed).
+- **Staggered Entrance Sequence (plays immediately as book opens):**
+  1. Top embossed gold Ganesha medallion + sacred Devi blessing from PDF fade in gracefully.
+  2. Groom's name reveals with a refined **calligraphic typewriter cursor animation** → ornamental gold `संग` medallion blooms → Bride's name reveals identically.
+  3. Layered die-cut lineage cards unfold smoothly below showing exact Groom side (*वर पक्ष*) and Bride side (*वधू पक्ष*) parents, grandparents, and hometown verbatim from the PDF.
+  4. Auspicious invitation plea from PDF + gentle animated `SCROLL` indicator.
+
+#### SECTION 2: Tactile "Pull to Reveal" Royal Scroll, Live Countdown & `.ics` Export
+- Oversized faint editorial watermark behind the section (*शुभ विवाह* · *Save the Date*).
+- Section header framed by a fine horizontal Madhubani *Aripan* lotus divider: `SAVE THE DATE` / `Pull to Reveal`.
+- **Physical 3D Scroll & Drag Physics:**
+  - Two turned cylindrical metallic-gold & teak-wood scroll rods with carved finial knobs.
+  - Intricate SVG crimson-and-gold silk tassel hanging from the bottom rod center with gentle pendulum sway.
+  - Supports **smooth finger/mouse vertical drag** (`pointerdown/move/up` + `touch-action: none` on handle so dragging never hijacks page scroll) AND **single-tap fallback** on the tassel pill (`Drag the tassel down`).
+  - Dragging past `45%` snaps open smoothly with weighted easing, chimes softly, and fires a **celebratory Canvas burst of blush rose petals & metallic gold-foil flecks**.
+- **Unrolled Cotton Parchment Content:**
+  - Recessed double gold + Madhubani corner filigree frame displaying the PDF's primary Wedding Day, extra-large ceremonial Date numeral, Month, Year, and Muhurat / Baraat departure time.
+- **Post-Reveal Interactive Trio (staggered entrance below scroll):**
+  1. Frosted parchment ribbon pill confirming the wedding date.
+  2. **Live Ticking Countdown Timer:** `XX DAYS · XX HRS · XX MIN · XX SEC` dynamically targeting the exact wedding timestamp in IST (`+05:30`).
+  3. **`ADD TO CALENDAR` Letterpress Pill Button:** Generates and downloads a valid `.ics` file with exact couple names, date/time, venue address, and Google Maps link (`SAVED TO CALENDAR ✓` state on click).
+
+#### SECTION 3: Two-Zone 3D Coverflow — "Wedding Festivities" (`मांगलिक कार्यक्रम`) WITH Dress Code Cards
+- Header with PDF's sacred Ganesh invocation + untampered recessed showcase of `ceremonyMandapImage`.
+- **3D Perspective Swipe Carousel:** Smooth horizontal touch-swipe & mouse-drag slider where the active center card sits crisp and elevated (`scale(1)`, `rotateY(0deg)`), while left/right neighbors peek out angled subtly (`scale(0.86)`, `rotateY(±12deg)`, `opacity: 0.72`, `filter: blur(1.8px)`). Includes arrow controls, active crimson-pill pagination dots, and `< > SWIPE TO SEE EVERY FUNCTION`.
+- **Exact Two-Zone Papercraft Card Structure (Built dynamically for every ceremony in the PDF):**
+  1. **Top Atmospheric Art Banner (~42% height):** Custom ritual-matched watercolor + Madhubani sky/drape gradient with subtle SVG bokeh & temple/lotus linework tailored to that specific ceremony.
+  2. **Overlapping Circular Gold-Rimmed Paper Medallion (`60px × 60px`):** Handcrafted fine-line Mithila-style SVG icon unique to each ceremony.
+  3. **Card Body:** Tracked date & day micro-label → Ceremonial Hindi/English title → Exact timing & description verbatim from the PDF.
+  4. **Tactile Dress Code Sub-Card (Bottom of every card):** Recessed ivory-paper rounded sub-card with a **`34px × 34px` textured fabric-swatch square** on the left, and `DRESS CODE` (tiny tracked caps) + attire recommendation on the right. *(Populate tasteful placeholder dress codes & hex swatches inside `WEDDING_DATA.ceremonies` with `/* [PLACEHOLDER — REPLACE LATER] */` whenever the PDF doesn't specify one.)*
+
+#### SECTION 4: Die-Cut Arch "Our Story / Heritage Moments" Swipe Carousel
+- Header: `MOMENTS` / `Our Story` framed by fine Madhubani double-line dividers.
+- Horizontal coverflow carousel matching Section 3's blurred/scaled side-peek physics.
+- Each slide is a tall **Die-Cut Cotton-Paper Arch Frame** (`border-radius: 999px 999px 18px 18px`, crisp `7px` warm ivory mat border, multi-layer paper shadow, `aspect-ratio: 3 / 4`).
+- Displays the PDF's original untampered visual moments + clearly marked placeholder story slots (from `MEDIA_ASSETS.storyPhotos`) so the user can drop in 6 real couple photos anytime.
+- Overlapping the bottom center of each arch: a tactile letterpress-bordered ivory caption pill displaying an italic serif caption.
+
+#### SECTION 5: High-Contrast Dark Royal Centerpiece Card (*बाल मनुहार* & Optional Reception Slot)
+- Dramatic editorial contrast pause: deep velvet wine radial card (`#7B1028 → #3D0512`, `border-radius: 24px`) with subtle paper texture, inset double antique-gold + Madhubani corner filigree frame, and softly twinkling 4-point gold stars.
+- **Primary Spotlight (From PDF):** Showcases the PDF's heartwarming **बाल मनुहार** couplet and children's names in luminous ivory-gold Devanagari serif with delicate gold peacock/star SVG flourishes.
+- **Optional Reception Highlight (Video Parity):** Include `WEDDING_DATA.reception` (default `enabled: true`, marked `/* [PLACEHOLDER — REPLACE WITH RECEPTION DETAILS OR SET enabled: false] */`) rendering a sleek dark-royal centerpiece card featuring clinking flutes SVG, date/venue placeholder, and the gold-bordered `DRESS CODE: ROYAL ETHNIC & SAREES` pill.
+
+#### SECTION 6: "How to Reach" — Color-Matched Illustrated Vector Map & Baraat Route
+- Header: `LOCATION & BARAAT` / `How to Reach`.
+- **Untampered Artwork Window:** Soft recessed arch framing `baraatProcessionImage` + highlighted crimson-gold Baraat Departure Notice banner verbatim from the PDF.
+- **Custom Illustrated Blush-Parchment SVG Map Card (Clickable → opens `https://maps.app.goo.gl/VgCL69bbck5FAVY78?g_st=aw`):**
+  - Styled to match the invitation's exact handmade paper & Madhubani mineral palette (`#F4E6E2` terrain, soft dusty-blue river/pond contour, warm ivory roads, subtle engraved map labels: `AUDHANPUR`, `BHOJEMAU`, `PRATAPGARH`, `SHIV MANDIR LANDMARK`).
+  - **Animated Dashed Crimson Route Line** curving gracefully from a pulsing **Departure Pin (`वर निवास · Near Shiv Mandir, Audhanpur`)** toward a **Destination Pin (`वधू निवास · Chandpur, Hariharganj`)**.
+  - Floating frosted-ivory tooltip card at bottom-left of the map: bold `वर निवास · Near Shiv Mandir, Audhanpur` + subtle `Tap to open in Google Maps`.
+- **Location Details & Action Bar Below Map:**
+  - Clean dual-card view displaying exact **Departure (`वर निवास`)** and **Destination (`वधू निवास`)** addresses verbatim from the PDF (including PIN `230301` & landmark).
+  - **Two Side-by-Side Primary Pill Buttons:**
+    1. Solid Royal Crimson CTA with custom navigation-arrow SVG: `GET DIRECTIONS` → opens `https://maps.app.goo.gl/VgCL69bbck5FAVY78?g_st=aw` in a new tab.
+    2. Outlined Letterpress Secondary Button: `COPY ADDRESS` → copies full formatted address to clipboard with `COPIED ✓` feedback.
+  - **Direct Contact Chips:** Clickable `tel:` pills for all PDF family numbers PLUS a dedicated subtle WhatsApp/Call chip for **Saurabh Pandey (`+91 94155 63327`)**.
+
+#### SECTION 7: Family Hosts Folio, Free WhatsApp Automated RSVP (`+91 94155 63327`) & Untampered Floral Finale
+- **Family & Hosts Paper Card (`स्नेहिल निमंत्रण एवं परिवार`):** Structured cotton-paper card cleanly organizing every host group from the PDF (*दर्शनाभिलाषी*, *स्वागताकांक्षी*, *विनीत*) in balanced two-column grids separated by tiny Madhubani lotus ornaments.
+- **Interactive RSVP & Free WhatsApp Automation Card (`KINDLY RESPOND` / `Will You Join Us?`):**
+  - Tactile debossed paper controls:
+    1. **Guest Name** input (required) + optional **Guest Phone / City** input.
+    2. **Attendance Toggle Pills:** `सपरिवार पधारेंगे · Joyfully Accepts` vs. `शुभाशीष प्रेषित · Sends Blessings`.
+    3. **Guest Count Stepper (`1–10`)** (automatically hidden when "Sends Blessings" is selected).
+    4. **Attending Ceremonies Pill Checkboxes:** Dynamically generated from the PDF's ceremonies (pre-checked on `शुभ विवाह`, toggleable with gold-crimson active border).
+    5. **Personal Blessings / Message** textarea.
+  - **Automated Free WhatsApp Dispatch Engine (On clicking `CONFIRM & SEND ON WHATSAPP`):**
+    1. Validates name, saves the RSVP cleanly to `localStorage` (so returning guests see their confirmed invitation summary with an `Edit RSVP` button), and triggers a gentle gold-petal Canvas burst + subtle chime.
+    2. **Silent Free Background Hook (Optional):**
+       - If `WEDDING_DATA.rsvpAutomation.freeWebhookUrl` is non-empty, fire a silent non-blocking `fetch(url, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })` to log into a free Google Sheet / webhook without ever blocking the user.
+       - If `WEDDING_DATA.rsvpAutomation.callMeBotApiKey` is non-empty, silently fire a non-blocking `fetch` GET request to `https://api.callmebot.com/whatsapp.php?phone=919415563327&text=${encodedSummary}&apikey=${key}` (`mode: 'no-cors'`) so Saurabh's WhatsApp receives an instant background alert automatically.
+    3. **Instant Pre-Filled WhatsApp Deep Link (`wa.me/919415563327`):**
+       - Compiles a warm, structured bilingual RSVP message containing:
+         - Header: `*श्री गणेशाय नमः — RSVP Confirmation*`
+         - Guest Name, Attendance Status, Total Guests, Selected Ceremonies, Blessings Note, and the clean auto-reply trigger tag (`#SaurabhRanjuVivah`).
+       - Opens `https://wa.me/919415563327?text=${encodeURIComponent(message)}` **directly inside the click handler** (preserving the synchronous user gesture so iOS Safari and Android Chrome never block it), while simultaneously transitioning the card into an elegant **Confirmed Letterpress Thank-You State** showing:
+         - A crisp summary of their RSVP.
+         - A manual re-launch button (`OPEN WHATSAPP TO SEND → +91 94155 63327`) in case they want to re-open WhatsApp.
+         - A secondary `COPY RSVP MESSAGE` button for instant clipboard fallback.
+- **Untampered Closing Floral Wreath & Footer:**
+  - Displays `floralWreathImage` (or bespoke animated circular lotus-and-peony wreath with gold Ganesha SVG) framing the couple's names, wedding date, and *प्रतिष्ठा में / प्रेषक* sign-off verbatim from the PDF.
+  - Delicate `REPLAY 3D INVITATION` button that smoothly resets back to the closed 3D book cover.
+
+---
+
+### 5. PROCEDURAL CLASSICAL WEB AUDIO ENGINE (ZERO EXTERNAL DEPENDENCIES)
+Build an elegant, browser-compliant audio controller in JS:
+- If `MEDIA_ASSETS.backgroundMusicUrl` is populated and loads cleanly, play it with gentle linear volume fade-in/fade-out.
+- **Built-In Offline Fallback Synthesizer:** Synthesize a genuinely soothing, warm **Indian Classical Ambience** using Web Audio API:
+  - Soft low-pass-filtered **Tanpura drone** (warm triangle/sine harmonic blend tuned to gentle `Sa–Pa–Sa` intervals with slow organic breathing LFO—never harsh or buzzy).
+  - Sparse, reverberant **Santoor / Swarmandal pentatonic plucks** (Raag Yaman / Bhupali intervals with soft exponential decay and stereo feedback delay).
+  - Crisp, delicate **auspicious brass temple chime** triggered strictly on three physical interactions: opening the 3D book cover, snapping open the date scroll, and confirming RSVP.
+- Start audio exclusively inside user gesture callbacks (book tap or equalizer toggle) so iOS Safari and Android Chrome play smoothly without errors.
+
+---
+
+### 6. FINAL TECHNICAL VERIFICATION BEFORE OUTPUT
+- Verify zero console errors, zero missing DOM IDs, smooth 60fps transforms (`transform`, `opacity`), and seamless touch + desktop mouse interactivity on the 3D book, pull-to-reveal tassel, both coverflow carousels, and RSVP WhatsApp launcher.
+- Verify `https://maps.app.goo.gl/VgCL69bbck5FAVY78?g_st=aw` and `919415563327` are wired cleanly and accurately.
+- Verify every placeholder is clearly tagged in `WEDDING_DATA` / `MEDIA_ASSETS` with `/* [PLACEHOLDER — REPLACE ...] */` while looking 100% finished and museum-worthy on first load.
+- Output the complete, self-contained `index.html` inside a single HTML code block.

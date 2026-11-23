@@ -1,0 +1,6 @@
+{
+  "name": "Saurabh Sang Ranju — Royal Wedding Invitation",
+  "description": "Traditional Indian luxury 3D interactive wedding invitation for Saurabh Pandey & Ranju Dubey (09 December 2026) with Three.js floral atmosphere, Madhubani papercraft artistry, classical audio ambience, and WhatsApp RSVP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
